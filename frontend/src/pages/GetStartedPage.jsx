@@ -6,7 +6,7 @@ const GetStartedPage = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-teal-500 to-teal-800 text-white">
       <div className="max-w-4xl mx-auto text-center p-6">
         <h1 className="text-5xl sm:text-6xl font-bold mb-6">
-          Get Started with RetailConnect
+          Get Started with RetailPro
         </h1>
         <p className="text-lg sm:text-xl mb-8">
           Join our platform to connect with retailers and distributors, streamline your operations, and grow your business like never before!
@@ -37,7 +37,7 @@ const GetStartedPage = () => {
 
       <footer className="mt-10">
         <p className="text-sm text-gray-200">
-          &copy; 2024 RetailConnect. All rights reserved.
+          &copy; 2024 RetailPro. All rights reserved.
         </p>
       </footer>
     </div>

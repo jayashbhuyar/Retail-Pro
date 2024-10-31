@@ -24,12 +24,12 @@ const HomePageNew = () => {
         <header className="bg-black bg-opacity-30 p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-center shadow-lg">
           <div className="flex items-center mb-4 sm:mb-0">
             <img
-              src="https://www.myretailconnect.com/assets/img/Retail-Connect-Logo.png"
+              src="https://res.cloudinary.com/dlx3l4a9p/image/upload/v1730382942/wjyihm0hyh0ctnkow2m0.png"
               alt="Retail Connect Logo"
               className="h-12 sm:h-16 w-auto mr-4 rounded-full shadow-md"
             />
             <h1 className="text-3xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">
-              RetailConnect
+              RetailPro
             </h1>
           </div>
         </header>
@@ -38,7 +38,7 @@ const HomePageNew = () => {
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-serif font-semibold mb-4 sm:mb-6 animate-pulse">
             Welcome to{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">
-              RetailConnect!
+              RetailPro!
             </span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 max-w-2xl">
@@ -86,7 +86,7 @@ const HomePageNew = () => {
 
         <footer className="bg-black bg-opacity-30 p-4 sm:p-6 text-center shadow-lg">
           <p className="text-xs sm:text-sm text-purple-200">
-            © 2024 RetailConnect. All rights reserved.
+            © 2024 RetailPro. All rights reserved.
           </p>
         </footer>
       </div>

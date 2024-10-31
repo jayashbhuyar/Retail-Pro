@@ -34,14 +34,14 @@ const About = () => {
           {/* Logo Section */}
           <div className="text-center mb-6">
             <img
-              src="https://www.myretailconnect.com/assets/img/Retail-Connect-Logo.png"
+              src="https://res.cloudinary.com/dlx3l4a9p/image/upload/v1730382942/wjyihm0hyh0ctnkow2m0.png"
               alt="RetailConnect Logo"
               className="w-1/3 mx-auto rounded-lg shadow-lg border-4 border-gray-700"
             />
           </div>
 
           <h1 className="text-4xl font-bold text-center my-8">
-            About RetailConnect
+            About RetailPro
           </h1>
 
           <div className="flex flex-col md:flex-row md:space-x-4 mb-6">
@@ -50,7 +50,7 @@ const About = () => {
                 Connecting Retailers and Distributors
               </h2>
               <p className="text-lg">
-                RetailConnect is a pioneering platform designed to bridge the
+                RetailPro is a pioneering platform designed to bridge the
                 gap between retailers and distributors. We leverage cutting-edge
                 technology to streamline order management, inventory tracking,
                 and communication, ensuring a seamless experience for all users.
@@ -137,7 +137,7 @@ const About = () => {
           <div className="flex justify-center mb-4">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIVGAauZX0JEVwEKOU9J3EnAjWir_ztq493P8NSkolgLWkJQjg7xUooQpOV3XlHAWQYbI&usqp=CAU"
-              alt="RetailConnect Community"
+              alt="RetailPro Community"
               className="w-full md:w-2/3 h-auto rounded-lg shadow-lg border-4 border-gray-700"
             />
           </div>
@@ -145,7 +145,7 @@ const About = () => {
           <div className="text-center mt-6">
             <p className="text-lg">
               We invite you to explore the endless possibilities of
-              RetailConnect and become part of a thriving community. Together,
+              RetailPro and become part of a thriving community. Together,
               we can transform the retail landscape!
             </p>
           </div>

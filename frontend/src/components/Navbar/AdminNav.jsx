@@ -54,8 +54,8 @@ const AdminNav = () => {
             <div className="flex-shrink-0">
               <Link to="/adminhome">
                 <img
-                  className="h-14 w-auto max-w-full"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1k4OmmdnQ9swvTRpaJML0CkWzJrg7XMO_JsqTl9xlCDzgftvgyiFeHPn56qZhxzzInA&usqp=CAU"
+                  className="h-14 w-auto max-w-full rounded-lg"
+                 src="https://res.cloudinary.com/dlx3l4a9p/image/upload/v1730382942/wjyihm0hyh0ctnkow2m0.png"
                   alt="Company Logo"
                 />
               </Link>

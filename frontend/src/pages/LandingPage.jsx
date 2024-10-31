@@ -193,8 +193,14 @@ const LandingPage = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-md">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold text-green-600">Retail Connect</Link>
+        <div className="container mx-auto px-2 py-2 flex justify-between items-center">
+        <Link to="/">
+              <img
+                className="h-8 w-auto md:h-14 rounded-lg"
+                src="https://res.cloudinary.com/dlx3l4a9p/image/upload/v1730382942/wjyihm0hyh0ctnkow2m0.png"
+                alt="Your Company"
+              />
+            </Link>
           <div className="space-x-4">
             <Link to="/auth/login" className="text-gray-600 hover:text-green-600 transition">Login</Link>
             <Link to="/auth/signup" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition">Sign Up</Link>
@@ -206,7 +212,7 @@ const LandingPage = () => {
       <div className="relative py-20 bg-gradient-to-r from-green-400 to-blue-500">
         <div className="container mx-auto px-4 text-center text-white">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 animate-fade-in">
-            Welcome to Retail Connect
+            Welcome to Retail Pro
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
             Discover a new way of connecting with trusted distributors and accessing quality products
@@ -321,8 +327,8 @@ const LandingPage = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "John Doe", role: "Retailer", content: "Retail Connect has transformed the way I source products. The platform is intuitive and the product selection is unmatched." },
-              { name: "Jane Smith", role: "Distributor", content: "As a distributor, I've seen a significant increase in my customer base thanks to Retail Connect. It's a game-changer." },
+              { name: "John Doe", role: "Retailer", content: "Retail Pro has transformed the way I source products. The platform is intuitive and the product selection is unmatched." },
+              { name: "Jane Smith", role: "Distributor", content: "As a distributor, I've seen a significant increase in my customer base thanks to Retail Pro. It's a game-changer." },
               { name: "Mike Johnson", role: "Retailer", content: "The customer support is exceptional. Any issues I've had were resolved quickly and professionally." }
             ].map((testimonial, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300">
@@ -361,7 +367,7 @@ const LandingPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Retail Connect</h3>
+              <h3 className="text-xl font-bold mb-4">Retail Pro</h3>
               <p className="text-gray-400">Connecting retailers and distributors in a seamless marketplace.</p>
             </div>
             <div>
@@ -392,7 +398,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-            <p className="text-gray-400">&copy; 2024 Retail Connect. All rights reserved.</p>
+            <p className="text-gray-400">&copy; 2024 Retail Pro. All rights reserved.</p>
           </div>
         </div>
       </footer>
