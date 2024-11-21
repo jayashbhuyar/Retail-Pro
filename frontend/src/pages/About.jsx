@@ -10,8 +10,6 @@ import AdminNav from "../components/Navbar/AdminNav";
 const About = () => {
   const userData = JSON.parse(localStorage.getItem("userdata"));
   const userRole = userData?.role; // Fetch the user's role from local storage
-
-  // Determine which navbar to render based on user role
   const renderNavbar = () => {
     switch (userRole) {
       case "retailer":
