@@ -46,6 +46,8 @@ import NewsFeed from "./pages/Newsfeed";
 import InvoicePage from "./pages/InvoicePage";
 import DistributorProducts from "./components/List/DistributorProducts";
 import Chat from "./chat/Chat"
+import Profile from "./pages/Profile";
+import ForgotPassword from "./pages/ForgotPassword";
 
 const App = () => {
   return (
@@ -86,15 +88,24 @@ const App = () => {
         <Route path="/adminnav" element={<AdminNav />} />
         <Route path="/adminretailerlist" element={<AdminRetailerList />} />
         <Route path="/adminproductlist" element={<AdminProductList />} />
-        <Route path="/admindistributorslist" element={<AdminDistributorsList />} />
+        <Route
+          path="/admindistributorslist"
+          element={<AdminDistributorsList />}
+        />
         <Route path="/admincomplaints" element={<AdminComplaints />} />
-        <Route path="/complaintandreview" element={<ComplaintAndReviewPage />} />
-        <Route path="/newsfeed" element={<NewsFeed/>} />
-        <Route path="/invoicepage" element={<InvoicePage/>} />
-        <Route path="/distributor-products/:distributorEmail" element={<DistributorProducts />} />
-        <Route path="/chat" element={<Chat/>} />
-
-        
+        <Route
+          path="/complaintandreview"
+          element={<ComplaintAndReviewPage />}
+        />
+        <Route path="/newsfeed" element={<NewsFeed />} />
+        <Route path="/invoicepage" element={<InvoicePage />} />
+        <Route
+          path="/distributor-products/:distributorEmail"
+          element={<DistributorProducts />}
+        />
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/forgotpass" element={<ForgotPassword />} />
       </Routes>
     </Router>
   );

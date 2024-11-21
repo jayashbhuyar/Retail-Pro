@@ -71,3 +71,26 @@ exports.deleteDistributor = async (req, res) => {
     res.status(500).json({ error: "Server error while deleting retailer" });
   }
 };
+
+exports.getProfileImage = async (req, res) => {
+  const { email } = req.query;
+
+  try {
+    // Find the user by email
+    const user = await User.findOne({ email });
+    
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    // If user is found, return the image URL
+    if (user.image) {
+      return res.json({ profileImage: user.image });
+    } else {
+      return res.status(404).json({ message: "Profile image not found" });
+    }
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Server error" });
+  }
+};

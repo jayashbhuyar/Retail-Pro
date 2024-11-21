@@ -168,6 +168,11 @@ const Login = () => {
             Sign up Here
           </Link>
         </div>
+        <div className="mt-6 text-center text-gray-600">
+          <Link to="/forgotpass" className="text-blue-500 hover:underline">
+          Forgot Password?
+          </Link>
+        </div>
       </div>
     </div>
   );

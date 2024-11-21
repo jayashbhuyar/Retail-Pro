@@ -125,20 +125,20 @@ const transporter = nodemailer.createTransport({
 // };
 
 // Controller to send OTP
-exports.sendOtp = async (req, res) => {
-  const { email } = req.body;
+exports.passchangesendOtp = async (req, res) => {
+    const { email } = req.body;
+  
+    try {
+      // Ensure the user exists before sending OTP (forgot password scenario)
+      const user = await User.findOne({ email });
+      if (!user) {
+        return res.status(404).json({ message: "User not found with this email" });
+      }
+  
+      // Generate new OTP
+      const otpCode = generateOTP();
+  
 
-  try {
-    // Check if user already exists
-    const existingUser = await User.findOne({ email });
-    if (existingUser) {
-      return res
-        .status(400)
-        .json({ message: "User already exists with this email" });
-    }
-
-    // Generate new OTP
-    const otpCode = generateOTP();
     // Save OTP to database
     const otp = new Otp({ email, otp: otpCode });
     await otp.save();
@@ -336,7 +336,7 @@ exports.sendOtp = async (req, res) => {
 
 
 // Controller to verify OTP
-exports.verifyOtp = async (req, res) => {
+exports.passchangeverifyOtp = async (req, res) => {
   const { email, otp } = req.body;
 
   try {

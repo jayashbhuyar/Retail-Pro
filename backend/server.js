@@ -58,8 +58,10 @@ mongoose
 app.use("/api/landingpage", landingpageRoutes);
 app.use("/api/upload/", uploadRoutes);
 app.use("/api/otp", otpRoutes);
+app.use("/passchange/api/otp", otpRoutes);
 app.use("/api/auth", authRoutes);
 app.post("/api/validate", validate);
+app.use("/pass/auth",verifyToken, authRoutes);
 app.use("/api/users", verifyToken, userRoutes);
 app.use("/api/products", verifyToken, productRoutes);
 app.use("/api/network", verifyToken, networkRoutes);

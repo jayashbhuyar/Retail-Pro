@@ -33,6 +33,7 @@ const GetStartedPage = () => {
         <button className="bg-yellow-500 text-black font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300">
           Sign Up Now
         </button></Link>
+        <h4 className="text-lg font-semibold mb-4 text-orange-500">Support: retailpro.connect@gmail.com</h4>
       </div>
 
       <footer className="mt-10">

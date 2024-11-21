@@ -169,7 +169,10 @@ const Signup = () => {
       if (response.ok) {
         setSuccess(data.message);
       } else {
-        setError(data.error);
+        // Update error handling to display the backend message
+        setError(
+          data.message || data.error || "An error occurred while signing up."
+        );
       }
     } catch (error) {
       setError("An error occurred while signing up.");
@@ -271,7 +274,7 @@ const Signup = () => {
                   setRole(e.target.value);
                   if (e.target.value === "retailer") {
                     setCompanyName(""); // Clear company name if switching to retailer
-                  } else {
+                  } else if (e.target.value === "distributor") {
                     setShopName(""); // Clear shop name if switching to distributor
                   }
                 }}
@@ -283,6 +286,7 @@ const Signup = () => {
               >
                 <option value="retailer">Retailer</option>
                 <option value="distributor">Distributor</option>
+                <option value="admin">Admin</option>
               </select>
             </div>
             {role === "distributor" && (
@@ -354,7 +358,7 @@ const Signup = () => {
                   </div>
                 )}
               </div>
-              
+
               {/* Image preview */}
               {image && (
                 <div className="relative w-full h-40 rounded-lg overflow-hidden">
