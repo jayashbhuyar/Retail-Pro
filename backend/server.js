@@ -52,7 +52,6 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
-// Routes
 
 // app.use('/api/upload', uploadRoutes);
 app.use("/api/landingpage", landingpageRoutes);
